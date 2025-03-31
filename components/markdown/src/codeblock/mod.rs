@@ -18,7 +18,7 @@ fn opening_html(
     pre_class: Option<String>,
     line_numbers: bool,
 ) -> String {
-    let mut html = String::from("<pre");
+    let mut html = String::from("<pre aria-hidden=\"true\"");
     if line_numbers {
         html.push_str(" data-linenos");
     }
